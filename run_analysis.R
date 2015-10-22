@@ -1,4 +1,5 @@
 library(dplyr)
+library(reshape2)
 
 #READ IN FEATURES FILE which has the name of all the features
 features <- read.table('UCI HAR Dataset/features.txt')
@@ -75,9 +76,13 @@ xy_test <- process_xy(x_test, y_test, subject_test, feature_names, activity_name
 #COMBINE TEST and TRAIN DATA
 xy_combined <- rbind(xy_train, xy_test)
 
+#group_by subjectID, activity
+#summarize mean of each variable
+#and melt it to tall and skinny data
 xy_combined %>%
     dplyr::group_by(subjectID, activity) %>%
     dplyr::summarize_each(funs(mean)) %>% 
+    melt(id.vars = c('subjectID','activity')) %>%
     write.table(file='tidy.txt',row.name=FALSE)
 
 
