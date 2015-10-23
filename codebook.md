@@ -1,19 +1,31 @@
 ##Code Book for the tidy data
 
-- tBodyAcc.mean.X                    
-- tBodyAcc.mean.Y                   
-- tBodyAcc.mean.Z                    
-- tGravityAcc.mean.X                
-- tGravityAcc.mean.Y                 
-- tGravityAcc.mean.Z                
-- tBodyAccJerk.mean.X
-- tBodyAccJerk.mean.Y               
-- tBodyAccJerk.mean.Z                
-- tBodyGyro.mean.X                  
-- tBodyGyro.mean.Y                   
-- tBodyGyro.mean.Z                  
-- tBodyGyroJerk.mean.X               
-- tBodyGyroJerk.mean.Y              
+#### tBodyAcc.mean.X
+Overall mean of tBodyAcc.mean in X direction
+#### tBodyAcc.mean.Y                   
+Overall mean of tBodyAcc.mean in Y direction
+#### tBodyAcc.mean.Z                   
+Overall mean of tBodyAcc.mean in Z direction
+#### tGravityAcc.mean.X
+Overall mean of tGravityAcc.mean in X direction
+#### tGravityAcc.mean.Y                 
+Overall mean of tGravityAcc.mean in Y direction
+#### tGravityAcc.mean.Z                
+Overall mean of tGravityAcc.mean in Z direction
+#### tBodyAccJerk.mean.X
+Overall mean of tBodyAccJerk.mean in X direction
+#### tBodyAccJerk.mean.Y
+Overall mean of tBodyAccJerk.mean in Y direction
+#### tBodyAccJerk.mean.Z
+Overall mean of tBodyAccJerk.mean in Z direction
+#### tBodyGyro.mean.X                  
+Overall mean of tBodyGyro.mean in X direction
+#### tBodyGyro.mean.Y                   
+Overall mean of tBodyGyro.mean in Y direction
+#### tBodyGyro.mean.Z                  
+Overall mean of tBodyGyro.mean in Z direction
+##### tBodyGyroJerk.mean.X               
+##### tBodyGyroJerk.mean.Y              
 - tBodyGyroJerk.mean.Z               
 - tBodyAccMag.mean                  
 - tGravityAccMag.mean                
