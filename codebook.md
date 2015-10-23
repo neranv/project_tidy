@@ -1,5 +1,19 @@
-##Code Book for the tidy data
+##Code Book
+The tidy data (long format) set consists of the following variables
+- subjectID
+- activity
+- variable
+- value
 
+### 1. subjectID
+It represents the person who performed the task or activity listed in the activity column. It ranges from 1-30.
+
+### 2. activity
+Each person is made to perform a activity. There are 6 types of activity and they are WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING and LAYING
+
+### 3. variable
+When a person performs an activity, raw values are measured from the activity tracker. Mean of all the measurements
+are computed. This column shows the measurement that was taken and they are
 ##### tBodyAcc.mean.X
 Overall mean of tBodyAcc.mean in X direction
 ##### tBodyAcc.mean.Y                   
@@ -172,3 +186,6 @@ Overall mean of fBodyBodyAccJerkMag.std
 Overall mean of fBodyBodyGyroMag.std
 ##### fBodyBodyGyroJerkMag.std
 Overall mean of fBodyGyroJerkMag.std
+
+### 4. value
+Value for the corresponding measurement is shown in this column
