@@ -19,7 +19,7 @@ where xdata is a data frame which contains different measurements (e.g. tBodyAcc
       feature_name is a character array which corresponds to measurements in xdata,
       and activities is a character array of activity names or labels (factors).
 </p>
-### Getting from Dirty to Tidy Data
+### III. Getting from Dirty to Tidy Data
 This section explains how data in 'UCI HAR Dataset' is transformed in to a tidy data set. 
 
 #### a. Read test and train data
