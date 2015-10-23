@@ -22,13 +22,13 @@ where xdata is a data frame which contains different measurements (e.g. tBodyAcc
 ### Getting from Dirty to Tidy Data
 This section explains how data in 'UCI HAR Dataset' is transformed in to a tidy data set. 
 
-#### a. Reading test and train data
+#### a. Read test and train data
 x_test, y_test and subject_test data frames are read using read.table() from x_test.txt, y_test.txt and subject_test.txt respectively. Similary x_train, y_train and subject_train data frames are read from x_tain.txt, y_train, z_train. 
 
-#### b. Reading feature names 
+#### b. Read feature names 
 Features names are read from features.txt using read.table()
 
-#### c. Reading activity names
+#### c. Read activity names
 Activity names are read from activity_labels.txt using read.table()
 
 #### d. Process the read data using process_xy() function
@@ -92,7 +92,7 @@ xy_combined <- rbind(xy_train, xy_test)
 where xy_train and xy_test are the tidy data sets
 
 #### f. Group, summarize and melt
-Use chaining the combined data is first grouped (by subjectID, activities) and then mean for each variable is computed. Finally the output is written to a file using write.table
+Use chaining the combined data is first grouped (by subjectID, activities) and then mean for each variable is computed. Finally the melted output is written to a file using write.table
 ```R
 xy_combined %>%
     dplyr::group_by(subjectID, activity) %>%
